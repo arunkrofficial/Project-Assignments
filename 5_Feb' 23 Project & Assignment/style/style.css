@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+ }
+ body {
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 20px 40px;
+    height: 85px;
+ }
+ .logo {
+    cursor: pointer;
+ }
+ .logo img {
+    width: 94px;
+    height: 34px;
+ }
+ .white-line {
+    width: 1px;
+    height: 48px;
+    margin-left: 40px;
+    background: #fff;
+ }
+ .list ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 40vw;
+ }
+ .list ul li {
+    list-style: none;
+    cursor: pointer;
+ }
+ .list ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+ }
+ .list ul li a:hover {
+    color: #00ffff;
+    font-weight: 600;
+ }
+ .sm-btn button {
+    background-color:#b90ec5;
+    padding: 10px 23px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: 600;
+    width: fit-content;
+ }
+ .sm-btn button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+ }
+ .home-section {
+    text-align: center;
+    margin-top: 8%;
+ }
+ .heading h1{
+    max-width: 840px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    text-align: center;
+    color: #ffffff;
+ }
+ .des p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+ }
+ .large-btn button {
+    background: #ba0cc5;
+    border-radius: 12px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 45px;
+    color: #ffffff;
+    border: 1px solid #000;
+    padding: 14px 22px;
+    margin-top: 64px;
+    cursor: pointer;
+ }
+ .large-btn button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000;
+ }
+

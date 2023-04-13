@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+    height: 100%;
+    width: 100%;
+    background-color: #e6edf7;
+    font-family: 'Poppins', sans-serif;
+
+ }
+ .logo {
+    margin-left: 20px;
+    cursor: pointer;
+ }
+ .logo img {
+    height: 38px;
+    width: 118px;
+ }
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+ }
+ nav ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 45vw ;
+ }
+ nav ul li {
+    list-style: none;
+    cursor: pointer;
+ }
+ nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+ }
+ nav ul li a:hover {
+    color: #ff0000;
+    font-weight: 600;
+ }
+  .contact-btn button {
+   background-color: #5955b3;
+   padding: 7px 22px;
+   cursor: pointer;
+   color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: 700;
+   width: fit-content;
+   margin-right: 40px;
+}
+ .contact-btn button:hover {
+   background-color: #ffffff;
+   color: #000000;
+   border-radius: 1px solid #000000;
+ }
+ .home {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .heading h1 {
+   margin-left: 20px;
+   font-size: 65px;
+   line-height: 70px;
+   font-weight: 600;
+   color: #3c2e60;
+ }
+ h1 span {
+   color: #706dbd;
+ }
+ .paragraph p {
+   font-size: 1rem;
+   margin-left: 20px;
+   margin-top: 20px;
+ }
+ .service-btn button {
+   background-color: #5955b3;
+   padding: 7px 22px;
+   cursor: pointer;
+   color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: 700;
+   width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px ;
+  margin-top: 45px;
+}
+ .service-btn button:hover {
+   background-color: #ffffff;
+   color: #000000;
+   border-radius: 1px solid #000000;
+ }
+ .right {
+   margin-right: 40px;
+   margin-top: 30px;
+ }
+ .right-image {
+    max-width: 800px;
+ }

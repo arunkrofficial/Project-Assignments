@@ -1,0 +1,104 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Red Rose', cursive;
+ }
+ /* body */
+ body {
+   height: 100vh;
+   width: 100vw;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/resto.png);
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ /* NavBar */
+ nav {
+   display: flex;
+   width: 100%;
+   margin-top: 35px;
+   align-items: center;
+   justify-content: space-between;
+ }
+ /* Logo */
+ .logo img {
+   cursor: pointer;
+   margin-left: 40px;
+ }
+ /* Navigation List */
+ nav ul {
+   display: flex;
+   align-items: center;
+   gap: 63px;
+   font-weight: 600;
+ }
+ nav ul li {
+   list-style: none;
+   cursor: pointer;
+ }
+ nav ul li a {
+   text-decoration: none;
+   color: #ffc233;
+   font-size: 21px;
+ }
+ nav ul li a:hover {
+   text-decoration: underline;
+   color: #fff;
+ }
+ /* Order btn */
+ .order-btn button {
+   background-color: #ff4500;
+   padding: 7px 25px;
+   cursor: pointer;
+   color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: 700;
+   width: fit-content;
+   margin-right: 40px;
+ }
+ .order-btn button:hover {
+   background-color: #ffffff;
+   color: #000000;
+   border: 1px solid #000000;
+ }
+ /* Home Section */
+ .home {
+   text-align: center;
+   margin: 0 auto;
+   max-width: 1000px;
+ }
+ /* Resto Banner */
+ .banner {
+   font-size: 70px;
+   line-height: 102px;
+   font-weight: 500;
+   margin-top: 10%;
+   margin-bottom: 42px;
+   color: #ffc233;
+ }
+ /* Menu btn */
+ .menu-btn button {
+   background-color: #ff4500;
+   padding: 10px 32px;
+   cursor: pointer;
+   color: white;
+   border: 1px solid black;
+   border-radius: 10px;
+   font-size: 22px;
+   font-weight: 700;
+   width: fit-content;
+ }
+ .menu-btn button:hover {
+   background-color: #ffffff;
+   color: #000000;
+   border: 1px solid #000000;
+ }
+ /* Footer Sec */
+ /* Scroll Icon */
+ .scroll-icon {
+   position: absolute;
+   right: 35px;
+   cursor: pointer;
+ }

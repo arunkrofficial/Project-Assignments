@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    width: 20rem;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  #display {
+    font-size: 50px;
+  }
+  

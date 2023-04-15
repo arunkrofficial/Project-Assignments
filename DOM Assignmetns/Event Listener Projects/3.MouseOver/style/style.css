@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #over {
+    width: 22rem;
+    background-color: #00FFFF;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #000;
+    font-size: 25px;
+  }

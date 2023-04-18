@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	padding: 20px 0px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: #1c1c1c;
+}
+header > h1{
+	color: gold;
+}
+main{
+	padding: 0px 0px 20px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+ul > li{
+	padding: 10px 5px;
+
+	color: white;
+	font-size: 18px;
+}
+.btn{
+	padding: 10px 20px;
+
+	background-color: transparent;
+	border: 2px solid gold;
+	border-radius: 20px;
+
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+
+	cursor: pointer;
+}
+#btn-add-item:active{
+	transform: scale(1.05);
+}
+#btn-message{
+	display: none;
+	cursor: not-allowed;
+}

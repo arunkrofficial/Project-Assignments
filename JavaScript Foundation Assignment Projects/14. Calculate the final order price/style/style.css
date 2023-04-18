@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: #1c1c1c;
+}
+header > h1{
+	color: gold;
+	text-transform: capitalize;
+}
+main{
+	width: calc(100vw - 40px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+#top{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.item{
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+
+	border: 2px solid pink;
+	border-radius: 20px;
+}
+.name{
+	display: flex;
+
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+
+}
+.info{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	color: rgba(255, 255, 255, 0.7);
+}
+.info > button{
+	width: 25px;
+	height: 25px;
+
+	background-color: gold;
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+.info > button > img{
+	width: 25px;
+}
+
+/* bottom of main section */
+#bottom{
+	display: flex;
+	gap: 20px;
+}
+#left{
+	width: calc(45vw);
+}
+
+/* table */
+/* we use class and make both table left and right */
+.table{
+	position: relative;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+
+	border: 2px solid pink ;
+}
+/* header of table */
+.heading-table{
+	padding: 8px 5px ;
+	display: flex;
+	justify-content: space-between;
+
+	background-color: gray;
+	/* border: 2px solid red; */
+}
+.heading-table > h4{
+	/* border: 1px solid blue; */
+
+	color: black;
+	font-size: 18px;
+}
+.heading-table > h4:nth-child(4){
+	width: 150px;
+}
+/* main of table */
+.main-table{
+	padding: 0px 5px;
+	display: flex;
+	flex-direction: column;
+}
+.main-row{
+	padding: 6px 0px;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-between;
+}
+.main-row > h4{
+	/* border: 1px solid gold; */
+
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 200;
+	text-align: center;
+}
+.main-row > h4:nth-child(1), .heading-table > h4:nth-child(1){
+	width: 82px;
+}
+.main-row > h4:nth-child(2), .heading-table > h4:nth-child(2){
+	width: 103px;
+}
+.main-row > h4:nth-child(3), .heading-table > h4:nth-child(3){
+	width: 90px;
+}
+.main-row > h4:nth-child(4), .heading-table > h4:nth-child(4){
+	width: 150px;
+	text-align: start;
+}
+hr{
+	width: 45vw;
+	align-self: center;
+}
+/* footer of table */
+.footer-table{
+	padding: 8px 5px ;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+
+	background-color: gray;
+}
+
+.footer-table > h4 > span{
+	color: gold;
+}

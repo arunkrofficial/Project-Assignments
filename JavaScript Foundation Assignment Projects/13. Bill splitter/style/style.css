@@ -1,0 +1,186 @@
+/* Sono font  */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	padding: 10px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: #1c1c1c;
+}
+/* header of body */
+header > h1{
+	position: relative;
+
+	color: gold;
+	text-transform: uppercase;
+}
+header > h1::after{
+	content: "";
+	width: 110%;
+	height: 2px;
+	position: absolute;
+	top: calc(50% - 1px);
+	display: inline-block;
+
+	background-color: rgba(255, 192, 203, 0.75);
+	transform: translateX(-95%);
+
+	z-index: -1;
+}
+
+/* main of body */
+main{
+	/* border: 1px solid red; */
+	color: white;
+}
+/* input screen's */
+#in-screens{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+/* input screen - 1 */
+#in-1{
+	/* border: 1px solid blue; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+#in-1 > span > label{
+	color: white;
+	font-size: 18px;
+}
+#in-1 > span > input{
+	padding: 8px 16px;
+	width: 100px;
+
+	background-color: transparent;
+	border: 2px solid white;
+
+	color: gold;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* input screen - 2 */
+#in-2{
+	display: none;
+	/* border: 1px solid blue; */
+	/* display: flex; */
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+#in-2 > header > h3{
+	padding: 0px 5px 3px 5px;
+
+	border-bottom: 2px pink solid;
+}
+#in-2-main{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 20px;
+	row-gap: 10px;
+}
+.dish > label{
+	color: white;
+	font-size: 18px;
+}
+.dish > input{
+	padding: 6px 12px;
+	width: 80px;
+
+	background-color: transparent;
+	border: 2px solid white;
+
+	color: gold;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* input screen - 3 */
+#in-3{
+	display: none;
+	/* border: 1px solid blue; */
+	/* display: flex; */
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+#in-3 > span > label{
+	color: white;
+	font-size: 18px;
+}
+#in-3 > span > input{
+	padding: 8px 16px;
+	width: 100px;
+
+	background-color: transparent;
+	border: 2px solid white;
+
+	color: gold;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* output screen */
+#op-screen{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+#op-screen > p{
+	color: white;
+	font-size: 18px;
+}
+#op-screen > p > span{
+	padding: 0px 3px;
+
+	border-bottom: 2px solid pink;
+
+	color: gold;
+}
+/* removing incresing & decreasing button from input[type = number] */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* for all input tag we removed ouline when input tag will focus */
+input:focus{
+	outline: none;
+}
+/* for all submit button is inside the input screens */
+#in-screens button{
+	padding: 10px 20px;
+
+	background-color: transparent;
+	border: 2px solid gold;
+	border-radius: 20px;
+	box-shadow: 0px 2px 4px pink;
+
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+#in-screens button:active{
+	transform: scale(1.05);
+}

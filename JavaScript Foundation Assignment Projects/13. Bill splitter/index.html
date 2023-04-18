@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS linking -->
+	<link rel="stylesheet" href="./style/style.css">
+	<title>Bill Splitter</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Bill Splitter
+		</h1>
+	</header>
+	<main>
+		<div id="in-screens">
+			<div id="in-1">
+				<span>
+					<label for="dishes">How many dishes are serevd : </label>
+					<input type="number" name="" id="dishes">
+				</span>
+				<button type="button" id="btn-dishes">Submit</button>
+			</div>
+			<div id="in-2">
+				<header>
+					<h3>Give price of each dish</h3>
+				</header>
+				<div id="in-2-main">
+					<!-- <div id="dish-0" class="dish">
+						<label for="price-dish-1">Dish-1 : </label>
+						<input type="number" name="" id="price-dish-1">
+					</div> -->
+				</div>
+				<footer id="in-2-footer">
+					<button type="button" id="btn-dish-price">Submit</button>
+				</footer>
+			</div>
+			<div id="in-3" id="btn-price">
+				<span>
+					<label for="peoples">How many peoples are sharing : </label>
+					<input type="number" name="" id="peoples">
+				</span>
+				<button type="button" id="btn-peoples">Submit</button>
+			</div>
+		</div>
+		<div id="op-screen">
+			<p id="total-bill">
+				<!-- Total bill : <span>200rs</span> -->
+			</p>
+			<p id="each-person-bill">
+				<!-- Bill to be paid by each person in group : <span>20rs</span> -->
+			</p>
+		</div>
+	</main>
+
+	<!-- script linking  -->
+	<script src="./script/script.js"></script>
+</body>
+</html>

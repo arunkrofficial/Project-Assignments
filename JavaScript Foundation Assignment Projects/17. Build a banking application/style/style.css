@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	padding: 10px 20px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: #1c1c1c;
+}
+/* back button */
+#back{
+	padding: 8px 14px;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	display: none;
+	/* display: flex; */
+	align-items: center;
+	gap: 4px;
+
+	background-color: gold;
+	border: 2px solid pink;
+	border-radius: 20px;
+
+	font-size: 22px;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+#back > img{
+	width: 30px;
+}
+/* section  */
+#section{
+	padding: 8px 14px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+
+	background-color: gold;
+	border: 2px solid pink;
+	border-radius: 20px;
+
+	font-size: 22px;
+	font-weight: 600;
+}
+
+/* ***********************************  header  ************************************ */
+header > h1{
+	padding: 0px 2px 2px 2px;
+
+	border-bottom: 2px solid pink;
+	color: gold;
+}
+/* ***********************************  main  ************************************ */
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+/* screen - 1 */
+#screen-1{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+#screen-1 > button{
+	padding: 8px 16px;
+
+	background-color: transparent;
+	border: 2px solid white;
+
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 18px;
+	font-weight: 600;
+
+	cursor: pointer;
+}
+#screen-1 > button:hover, #btn-common:hover{
+	color: gold;
+	transform: scale(1.05);
+}
+
+/* screen - 2 */
+#div-deposite , #div-withdrawal{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.money-label{
+	color: white;
+	font-size: 20px;
+}
+.money-input{
+	padding: 8px 16px;
+	width: 100px;
+
+	background-color: transparent;
+	border: 2px solid white;
+
+	color: gold;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/* button for Deposite and Withdrawal section */
+#btn-common{
+	padding: 10px 22px;
+	display: none;
+
+	background-color: transparent;
+	border: 2px solid gold;
+	border-radius: 20px;
+
+	color: gold;
+	font-size: 22px;
+}
+
+/* ******************************* History ***************************************** */
+#div-history{
+	height: 315px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+
+	border: 2px solid pink;
+	color: gold;
+}
+#div-history > header{
+	padding: 8px 4px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	gap: 20px;
+
+	background-color: rgba(255, 255, 255, 0.25);
+
+	color: gold;
+	font-size: 20px;
+}
+#div-history > main{
+	height: 229px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+
+	overflow-y: auto;
+}
+#div-history > main > div{
+	padding: 10px 4px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	gap: 20px;
+
+	/* border: 1px solid red; */
+
+	color: white;
+	font-size: 18px;
+
+}
+#div-history > main > hr{
+	width: 100%;
+}
+/* aligning the header h4 and main div h4 */
+#div-history > header > h4{
+	text-align: center;
+}
+
+#div-history > header > h4:nth-child(1), #div-history > main > div > h4:nth-child(1){
+	width: 115px;
+}
+#div-history > header > h4:nth-child(2), #div-history > main > div > h4:nth-child(2){
+	width: 125px;
+	text-align: center;
+}
+#div-history > header > h4:nth-child(3), #div-history > main > div > h4:nth-child(3){
+	width: 115px;
+	text-align: center;
+	overflow-y: auto;
+}
+#div-history > header > h4:nth-child(4), #div-history > main > div > h4:nth-child(4){
+	width: 135px;
+}
+#div-history > main > div > h4:nth-child(4){
+	text-align: end;
+}
+
+/* footer  */
+#div-history > footer{
+	padding: 8px 4px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(255, 255, 255, 0.25);
+
+	color: gold;
+	font-size: 20px;
+}
+
+/* Balance */
+#div-balance{
+	margin-top: 30px;
+	padding: 40px 50px;
+	border-radius: 40px;
+
+	box-shadow: 2px 2px 2px pink , -2px -2px 2px pink;
+}
+#div-balance > p{
+	color: white;
+	font-size: 35px;
+	line-height: 55px;
+	text-align: center;
+}
+#div-balance > p > span{
+	padding: 0px 3px 2px 3px;
+	border-bottom: 2px solid white;
+
+	color: gold;
+}
+
+
+
+
+
+/* removing incresing & decreasing button from input[type = number] */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* for all input tag we removed ouline when input tag will focus */
+input:focus{
+	outline: none;
+}

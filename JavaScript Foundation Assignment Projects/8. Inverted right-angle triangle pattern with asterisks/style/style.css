@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono' , sans-serif;
+}
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+
+	background-color: #00ffff;
+}
+header{
+	position: absolute;
+	top: 10%;
+
+	color: #000;
+	text-align: center;
+	text-transform: capitalize;
+}
+main{
+	position: absolute;
+	top: calc(10% + 55px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	color: #000;
+}
+main > label{
+	font-size: 25px;
+	text-align: center;
+}
+main > input{
+	padding: 8px 16px;
+	width: 80px;
+
+	background-color: transparent;
+	border: 1.5px solid #000;
+
+	color: #000;
+	font-size: 25px;
+	text-align: center;
+}
+main > input:focus{
+	transform: scale(1.025);
+	outline: none;
+}
+/* removing incresing & decreasing button from input[type = number] */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+main > button{
+	padding: 10px 20px;
+
+	background-color: #000;
+	border: none;
+	border-radius: 20px;
+
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	text-transform: capitalize;
+
+	cursor: pointer;
+}
+#op-screen{
+	padding: 30px 30px 1px 20px;
+
+	border: 2px solid #000;
+
+	color: #000;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: -10px;
+}
+
+
+
+
+

@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	background: linear-gradient(to top left , rgb(0, 255, 247) , rgb(3, 252, 86));
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+
+
+	font-family: monospace;
+}
+header h1{
+	font-weight: 800;
+	letter-spacing: 1.5px;
+}
+form{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 0px 10px;
+}
+form > div > input{
+	width: 50px;
+	background-color: transparent;
+	border: 2px solid gray;
+	padding: 4px 6px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+form > div > input:focus{
+	outline: none;
+}
+hr{
+	width: 150%;
+	align-self: center;
+	margin: 20px 0px;
+}
+.btn{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 10px;
+	align-self: center;
+}
+.btn > button{
+	padding: 7px 14px;
+	color: white;
+	background-color: #1c1c1c;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+}
+.op-screen{
+	position: absolute;
+	bottom: -20px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+form > div > p{
+	text-align: center;
+	font-size: 18px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS linking -->
+	<link rel="stylesheet" href="./style/style.css">
+	<title>CalCulate The Final Order Price </title>
+</head>
+<body>
+	<header>
+		<h1>CalCulate The Final Order Price</h1>
+	</header>
+	<main>
+		<div id="top">
+			<div class="item" id="item-1">
+				<span class="name">
+					<p>item</p>
+					<p>-1</p>
+				</span>
+				<span class="info">
+					<p id="price">10$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(0)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-2">
+				<span class="name">
+					<p>item</p>
+					<p>-2</p>
+				</span>
+				<span class="info">
+					<p id="price">20$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(1)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-3">
+				<span class="name">
+					<p>item</p>
+					<p>-3</p>
+				</span>
+				<span class="info">
+					<p id="price">30$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(2)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-4">
+				<span class="name">
+					<p>item</p>
+					<p>-4</p>
+				</span>
+				<span class="info">
+					<p id="price">40$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(3)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-5">
+				<span class="name">
+					<p>item</p>
+					<p>-5</p>
+				</span>
+				<span class="info">
+					<p id="price">50$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(4)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-6">
+				<span class="name">
+					<p>item</p>
+					<p>-6</p>
+				</span>
+				<span class="info">
+					<p id="price">60$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(5)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-7">
+				<span class="name">
+					<p>item</p>
+					<p>-7</p>
+				</span>
+				<span class="info">
+					<p id="price">70$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(6)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+			<div class="item" id="item-8">
+				<span class="name">
+					<p>item</p>
+					<p>-8</p>
+				</span>
+				<span class="info">
+					<p id="price">80$</p>
+					<button id="add-to-bag" type="button" title="Add to Cart" onclick="addItem(7)">
+						<img src="./assets/cart.png" alt="">
+					</button>
+				</span>
+			</div>
+		</div>
+		<div id="bottom">
+			<div id="left" class="table">
+				<div id="heading-left" class="heading-table">
+					<h4>Sr. No.</h4>
+					<h4>Item Name</h4>
+					<h4>Quantity</h4>
+					<h4>Price($)</h4>
+				</div>
+				<div id="main-left" class="main-table">
+					<!-- <div id="main-left-row-1" class="main-left-row main-row">
+						<h4>1</h4>
+						<h4>Item-1</h4>
+						<h4>10</h4>
+						<h4>10 * 10 = 100</h4>
+					</div>
+					<hr> -->
+				</div>
+				<div id="footer-left" class="footer-table">
+					<h4 id="tq-left" class="tq-table">
+						Total Quantity : 0
+					</h4>
+					<h4 id="ta-left" class="ta-table">
+						Total Ammount : 0
+					</h4>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- script linking  -->
+	<script src="./script/script.js"></script>
+</body>
+</html>

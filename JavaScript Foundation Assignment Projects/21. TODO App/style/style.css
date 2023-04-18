@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	padding: 40px 0px 20px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: hsl(235, 21%, 11%);
+}
+#bgc{
+	width: 100vw;
+	height: 40vh;
+	position: fixed;
+	top: 0;
+
+	z-index: -1;
+}
+/* header of body ******************************************************** */
+body > header > h1{
+	color: white;
+	letter-spacing: 10px;
+}
+/* main of body ******************************************************** */
+body > main{
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+}
+/* new input box */
+#new-todo{
+	position: relative;
+	padding: 16px 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	background-color: hsl(235, 24%, 19%);
+	border-radius: 5px;
+}
+.head-circle{
+	width: 15px;
+	height: 15px;
+
+	background: transparent;
+	border: 0.5px solid  rgba(119, 122, 146, 0.75);
+	border-radius: 50%;
+}
+#in-new-todo{
+	width: 475px;
+
+ 	background-color: transparent;
+ 	border: none;
+
+	color: hsl(234, 39%, 85%);
+	font-size: 22px;
+	caret-color: hsl(220, 98%, 61%);
+}
+#in-new-todo:focus{
+	outline: none;
+}
+#btn-add-task{
+	padding: 5px 10px 2.5px 10px;
+	position: absolute;
+	right: 15px;
+
+	background-color: transparent;
+	border: 2px solid hsl(280, 87%, 65%);
+	border-radius: 10px;
+
+	color: hsl(220, 98%, 61%);
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* list items section*/
+body > main > section{
+	display: flex;
+	flex-direction: column;
+
+	background-color: hsl(235, 24%, 19%);
+	border-radius: 5px;
+}
+/* task screen for each task of completed , active   */
+#task-screen{
+	display: flex;
+	flex-direction: column;
+}
+/* each single task */
+.box{
+	position: relative;
+	padding: 12px 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	border-bottom: 0.5px solid hsl(237, 14%, 26%);
+
+	font-size: 18px;
+	cursor: move;
+}
+/* active task circle */
+.active-circle{
+	width: 15px;
+	height: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: transparent;
+	border: 0.5px solid  rgba(119, 122, 146, 0.75);
+	border-radius: 50%;
+
+	cursor: pointer;
+}
+/* check tick not visisible if task is active */
+.active-circle > img{
+	display: none;
+}
+/* hover effect on circle of  active task */
+.active-circle:hover{
+	background: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+	border: none;
+}
+.active-circle:hover > .small-circle{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: hsl(235, 24%, 19%);
+}
+
+/* completed task circle */
+.completed-circle{
+	width: 15px;
+	height: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* info of tsak is active */
+.box > .info{
+	color: hsl(234, 39%, 85%);
+}
+/* info of task is completed*/
+.box > .info > del{
+	color: hsl(233, 14%, 35%);
+}
+
+/* delete option for both task active and completed */
+.cross{
+	height: 16px;
+	position: absolute;
+	top: 14px;
+	right: 15px;
+	display: none;
+
+	cursor: pointer;
+}
+.cross > img{
+	width: 15px;
+	height: 15px;
+}
+.cross > img:nth-child(2){
+	display: none;
+}
+.cross:hover > img:nth-child(1){
+	display: none;
+}
+.cross:hover > img:nth-child(2){
+	display: block;
+}
+/* this gray cross visible only if box is hovered and if this cross hovered then color of cross will change */
+.box:hover > .cross{
+	display: block;
+}
+
+/* footer of cection  */
+section > footer{
+	padding: 12px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(233, 14%, 50%);
+	font-size: 14px;
+}
